@@ -1,0 +1,1028 @@
+const workouts = [
+  {
+    programs: [
+      {
+        day: 1,
+        exercises: [
+          {
+            id: 1,
+            name: 'Flat DB Press (Heavy)',
+            warmUpSets: 3,
+            sets: 1,
+            reps: '4-6',
+            RPE: '8-9',
+            restTime: '~3 mins',
+            description:
+              'Focus on strength here. Each week add weight or reps. Keep form consistent.',
+          },
+          {
+            id: 2,
+            name: 'Flat DB Press (Back off)',
+            warmUpSets: 0,
+            sets: 1,
+            reps: '8-10',
+            RPE: '8-10',
+            restTime: '~3 mins',
+            description:
+              'Focus on mind-muscle connection with pecs. Drop the weight back and focus on stretch and squeeze!',
+          },
+          {
+            id: 3,
+            name: 'Romanian Deadlift',
+            warmUpSets: 2,
+            sets: 2,
+            reps: '8-10',
+            RPE: '8-9',
+            restTime: '~2 mins',
+            description:
+              'Maintain a neutral lower back, set your hips back, squeeze your hamstrings to move the weight.',
+          },
+          {
+            id: 4,
+            name: '2-Grip Lat Pulldown',
+            warmUpSets: 1,
+            sets: 2,
+            reps: '10-12',
+            RPE: '9-10',
+            restTime: '~2 mins',
+            description:
+              'Do first set wide overhand (1.5x shoulder width), second set underhand (1x shoulder width)',
+          },
+          {
+            id: 5,
+            name: 'DB Walking Lunge',
+            warmUpSets: 1,
+            sets: 1,
+            reps: '8-10 per leg',
+            RPE: '9-10',
+            restTime: '~1.5 mins',
+            description: 'Take medium strides, let your torso lean forward.',
+          },
+          {
+            id: 6,
+            name: 'DB Skull Crusher',
+            warmUpSets: 1,
+            sets: 1,
+            reps: '12-15',
+            RPE: '10',
+            restTime: '~1.5 mins',
+            description:
+              'Arc the dumbbells behind your head, constant tension on triceps.',
+          },
+          {
+            id: 7,
+            name: 'DB Lateral Raise',
+            warmUpSets: 1,
+            sets: 1,
+            reps: '12-15 (dropset)',
+            RPE: '10',
+            restTime: '~1.5 mins',
+            description:
+              'Dropset: perform 12-15 reps, drop the weight by ~50%, perform an additional 12-15 reps. Raise the dumbbells out not up, mind muscle connection with middle fibers.',
+          },
+          {
+            id: 8,
+            name: 'Seated Calf Raise',
+            warmUpSets: 1,
+            sets: 1,
+            reps: '12-15 (dropset)',
+            RPE: '10',
+            restTime: '~1.5 mins',
+            description:
+              'Dropset: perform 12-15 reps, drop the weight by ~50%, perform an additional 12-15 reps. Press all the way up to your toes, stretch your calves at the bottom, dont bounce.',
+          },
+        ],
+      },
+      {
+        day: 2,
+        exercises: [
+          {
+            id: 9,
+            name: 'Hack Squat (Heavy)',
+            warmUpSets: 3,
+            sets: 1,
+            reps: '4-6',
+            RPE: '8-9',
+            restTime: '~3 mins',
+            description:
+              'Focus on strength here. Each week add weight or reps. Keep form consistent.',
+          },
+          {
+            id: 10,
+            name: 'Hack Squat (Back off)',
+            warmUpSets: 0,
+            sets: 1,
+            reps: '8-10',
+            RPE: '8-9',
+            restTime: '~3 mins',
+            description:
+              'Drop the weight back and focus on controlling the negative. Smooth and consistent rep tempo.',
+          },
+          {
+            id: 11,
+            name: 'Incline DB Press',
+            warmUpSets: 2,
+            sets: 2,
+            reps: '8-10',
+            RPE: '8-9',
+            restTime: '~2 mins',
+            description: 'Sink the dumbbells as low as you comfortably can.',
+          },
+          {
+            id: 12,
+            name: 'Seated Hamstring Curl',
+            warmUpSets: 1,
+            sets: 1,
+            reps: '10-12 (Dropset)',
+            RPE: '10',
+            restTime: '~1.5 mins',
+            description:
+              'Dropset: perform 10-12 reps, drop the weight by ~50%, perform an additional 10-12 reps. Do seated if available. Otherwise do Lying Leg Curl or Nordic Ham Curl.',
+          },
+          {
+            id: 13,
+            name: 'T-Bar Row',
+            warmUpSets: 1,
+            sets: 2,
+            reps: '10-12',
+            RPE: '9-10',
+            restTime: '~1.5 mins',
+            description:
+              'Squeeze your shoulder blades at the top, control the weight.',
+          },
+          {
+            id: 14,
+            name: 'EZ Bar Curl',
+            warmUpSets: 1,
+            sets: 1,
+            reps: '12-15 (dropset)',
+            RPE: '10',
+            restTime: '~1.5 mins',
+            description:
+              'Dropset: perform 12-15 reps, drop the weight by ~50%, perform an additional 12-15 reps. Arc the bar out not up , focus on squeezing your biceps',
+          },
+          {
+            id: 15,
+            name: 'Cable Crunch',
+            warmUpSets: 0,
+            sets: 1,
+            reps: '12-15 (dropset)',
+            RPE: '10',
+            restTime: '~1.5 mins',
+            description:
+              'Dropset: perform 12-15 reps, drop the weight by ~50%, perform an additional 12-15 reps. Round your back as you crunch.',
+          },
+        ],
+      },
+    ],
+  },
+  {
+    programs: [
+      {
+        day: 1,
+        exercises: [
+          {
+            id: 16,
+            name: 'Hack Squat (Heavy)',
+            warmUpSets: 3,
+            sets: 1,
+            reps: '4-6',
+            RPE: '8-9',
+            restTime: '~3 mins',
+            description:
+              'Focus on strength here. Each week add weight or reps. Keep form consistent.',
+          },
+          {
+            id: 17,
+            name: 'Hack Squat (Back off)',
+            warmUpSets: 0,
+            sets: 1,
+            reps: '8-10',
+            RPE: '8-9',
+            restTime: '~3 mins',
+            description:
+              'Drop the weight back and focus on controlling the negative. Smooth and consistent rep tempo.',
+          },
+          {
+            id: 18,
+            name: 'Incline DB Press',
+            warmUpSets: 2,
+            sets: 2,
+            reps: '8-10',
+            RPE: '8-9',
+            restTime: '~2 mins',
+            description: 'Sink the dumbbells as low as you comfortably can.',
+          },
+          {
+            id: 19,
+            name: 'Seated Hamstring Curl',
+            warmUpSets: 1,
+            sets: 1,
+            reps: '10-12',
+            RPE: '10',
+            restTime: '~1.5 mins',
+            description:
+              'Do seated if available. Otherwise do Lying Leg Curl or Nordic Ham Curl.',
+          },
+          {
+            id: 20,
+            name: 'T-Bar Row',
+            warmUpSets: 1,
+            sets: 2,
+            reps: '10-12',
+            RPE: '9-10',
+            restTime: '~1.5 mins',
+            description:
+              'Squeeze your shoulder blades at the top, control the weight.',
+          },
+          {
+            id: 21,
+            name: 'DB Bicep Curl',
+            warmUpSets: 1,
+            sets: 1,
+            reps: '10-12 (dropset)',
+            RPE: '12-15',
+            restTime: '~1.5 mins',
+            description:
+              'Dropset: perform 12-15 reps, drop the weight by ~50%, perform an additional 12-15 reps. Palms start neutral at the bottom and supinate (palms up) as you curl. Do both arms at the same time.',
+          },
+          {
+            id: 22,
+            name: 'DB Lateral Raise',
+            warmUpSets: 1,
+            sets: 1,
+            reps: '12-15 (dropset)',
+            RPE: '10',
+            restTime: '~1.5 mins',
+            description:
+              'Dropset: perform 12-15 reps, drop the weight by ~50%, perform an additional 12-15 reps. Raise the dumbbells out not up", mind muscle connection with middle fibers.',
+          },
+          {
+            id: 23,
+            name: 'Cable Crunch',
+            warmUpSets: 0,
+            sets: 1,
+            reps: '12-15 (dropset)',
+            RPE: '10',
+            restTime: '~1.5 mins',
+            description:
+              'Dropset: perform 12-15 reps, drop the weight by ~50%, perform an additional 12-15 reps. Round your back as you crunch.',
+          },
+        ],
+      },
+      {
+        day: 2,
+        exercises: [
+          {
+            id: 24,
+            name: 'Flat DB Press (Heavy)',
+            warmUpSets: 3,
+            sets: 1,
+            reps: '4-6',
+            RPE: '8-9',
+            restTime: '~3 mins',
+            description:
+              'Focus on strength here. Each week add weight or reps. Keep form consistent.',
+          },
+          {
+            id: 25,
+            name: 'Flat DB Press (Back off)',
+            warmUpSets: 0,
+            sets: 1,
+            reps: '8-10',
+            RPE: '8-10',
+            restTime: '~3 mins',
+            description:
+              'Focus on mind-muscle connection with pecs. Drop the weight back and focus on stretch and squeeze!',
+          },
+          {
+            id: 26,
+            name: '2-Grip Lat Pulldown',
+            warmUpSets: 2,
+            sets: 2,
+            reps: '10-12',
+            RPE: '9-10',
+            restTime: '~2 mins',
+            description:
+              'Do first set wide overhand (1.5x shoulder width), second set underhand (1x shoulder width)',
+          },
+          {
+            id: 27,
+            name: 'Seated DB Shoulder Press',
+            warmUpSets: 1,
+            sets: 2,
+            reps: '10-12',
+            RPE: '9-10',
+            restTime: '~2 mins',
+            description:
+              'Bring the dumbbells all the way down, keep your torso upright.',
+          },
+          {
+            id: 28,
+            name: 'Seated Cable Row',
+            warmUpSets: 1,
+            sets: 2,
+            reps: '10-12 (dropset)',
+            RPE: '9-10',
+            restTime: '~2 mins',
+            description:
+              'Focus on squeezing your shoulder blades together, drive your elbows down and back. Last set only do a dropset: perform 10-12 reps, drop the weight by ~50%, perform an additional 10-12 reps.',
+          },
+          {
+            id: 29,
+            name: 'A1: EZ Bar Skull Crusher',
+            warmUpSets: 1,
+            sets: 2,
+            reps: '12-15',
+            RPE: '10',
+            restTime: '0 mins',
+            description:
+              'Arc the bar behind your head, constant tension on triceps.',
+          },
+          {
+            id: 30,
+            name: 'A2: EZ Bar Curl',
+            warmUpSets: 1,
+            sets: 2,
+            reps: '12-15',
+            RPE: '10',
+            restTime: '~1.5 mins',
+            description:
+              'Arc the bar out not up, focus on squeezing your biceps.',
+          },
+        ],
+      },
+      {
+        day: 3,
+        exercises: [
+          {
+            id: 31,
+            name: 'Romanian Deadlift',
+            warmUpSets: 2,
+            sets: 2,
+            reps: '10-12',
+            RPE: '8-9',
+            restTime: '~2 mins',
+            description:
+              'Maintain a neutral lower back, set your hips back, squeeze your hamstrings to move the weight.',
+          },
+          {
+            id: 32,
+            name: 'Leg Press',
+            warmUpSets: 2,
+            sets: 3,
+            reps: '10-12',
+            RPE: '8-9',
+            restTime: '~2 mins',
+            description:
+              'Medium width feet placement on the platform, do not allow your lower back to round.',
+          },
+          {
+            id: 33,
+            name: 'Leg Extension',
+            warmUpSets: 1,
+            sets: 1,
+            reps: '10-12 (dropset)',
+            RPE: '9-10',
+            restTime: '~1.5 mins',
+            description:
+              'Dropset: perform 10-12 reps, drop the weight by ~50%, perform an additional 10-12 reps. Focus on squeezing your quads to make the weight move.',
+          },
+          {
+            id: 34,
+            name: 'A1: Seated Calf Raise',
+            warmUpSets: 1,
+            sets: 2,
+            reps: '12-15',
+            RPE: '10',
+            restTime: '~0 mins',
+            description:
+              'Press all the way up to your toes, stretch your calves at the bottom, dont bounce.',
+          },
+          {
+            id: 35,
+            name: 'A2: Cable Crunch',
+            warmUpSets: 1,
+            sets: 2,
+            reps: '12-15',
+            RPE: '10',
+            restTime: '~1.5 mins',
+            description: 'Round your back as you crunch.',
+          },
+        ],
+      },
+    ],
+  },
+  {
+    programs: [
+      {
+        day: 1,
+        exercises: [
+          {
+            id: 36,
+            name: 'Flat DB Press (Heavy)',
+            warmUpSets: 3,
+            sets: 1,
+            reps: '4-6',
+            RPE: '8-9',
+            restTime: '~3 mins',
+            description:
+              'Focus on strength here. Each week add weight or reps. Keep form consistent.',
+          },
+          {
+            id: 37,
+            name: 'Flat DB Press (Back off)',
+            warmUpSets: 0,
+            sets: 1,
+            reps: '8-10',
+            RPE: '8-10',
+            restTime: '~3 mins',
+            description:
+              'Focus on mind-muscle connection with pecs. Drop the weight back and focus on stretch and squeeze!',
+          },
+          {
+            id: 38,
+            name: '2-Grip Lat Pulldown',
+            warmUpSets: 2,
+            sets: 2,
+            reps: '10-12',
+            RPE: '9-10',
+            restTime: '~2 mins',
+            description:
+              'Do first set wide overhand (1.5x shoulder width), second set underhand (1x shoulder width)',
+          },
+          {
+            id: 39,
+            name: 'Seated DB Shoulder Press',
+            warmUpSets: 1,
+            sets: 2,
+            reps: '10-12',
+            RPE: '9-10',
+            restTime: '~2 mins',
+            description:
+              'Bring the dumbbells all the way down, keep your torso upright.',
+          },
+          {
+            id: 40,
+            name: 'Seated Cable Row',
+            warmUpSets: 1,
+            sets: 2,
+            reps: '10-12 (dropset)',
+            RPE: '9-10',
+            restTime: '~2 mins',
+            description:
+              'Focus on squeezing your shoulder blades together, drive your elbows down and back. Last set only do a dropset: perform 10-12 reps, drop the weight by ~50%, perform an additional 10-12 reps.',
+          },
+          {
+            id: 41,
+            name: 'A1: EZ Bar Skull Crusher',
+            warmUpSets: 1,
+            sets: 2,
+            reps: '12-15',
+            RPE: '10',
+            restTime: '0 mins',
+            description:
+              'Arc the bar behind your head, constant tension on triceps.',
+          },
+          {
+            id: 42,
+            name: 'A2: EZ Bar Curl',
+            warmUpSets: 1,
+            sets: 2,
+            reps: '12-15',
+            RPE: '10',
+            restTime: '~1.5 mins',
+            description:
+              'Arc the bar out not up, focus on squeezing your biceps.',
+          },
+        ],
+      },
+      {
+        day: 2,
+        exercises: [
+          {
+            id: 43,
+            name: 'Hack Squat (Heavy)',
+            warmUpSets: 3,
+            sets: 1,
+            reps: '4-6',
+            RPE: '8-9',
+            restTime: '~3 mins',
+            description:
+              'Focus on strength here. Each week add weight or reps. Keep form consistent.',
+          },
+          {
+            id: 44,
+            name: 'Hack Squat (Back off)',
+            warmUpSets: 0,
+            sets: 1,
+            reps: '8-10',
+            RPE: '8-9',
+            restTime: '~3 mins',
+            description:
+              'Drop the weight back and focus on controlling the negative. Smooth and consistent rep tempo.',
+          },
+          {
+            id: 45,
+            name: 'Seated Hamstring Curl',
+            warmUpSets: 1,
+            sets: 1,
+            reps: '10-12 (dropset)',
+            RPE: '10',
+            restTime: '~1.5 minutes',
+            description:
+              'Dropset: perform 10-12 reps, drop the weight by ~50%, perform an additional 10-12 reps. Do seated if available. Otherwise do Lying Leg Curl or Nordic Ham Curl.',
+          },
+          {
+            id: 46,
+            name: 'A1: Standing Calf Raise',
+            warmUpSets: 1,
+            sets: 2,
+            reps: '10-12',
+            RPE: '9-10',
+            restTime: '0 minutes',
+            description:
+              'Press all the way up to your toes, stretch your calves at the bottom, dont bounce',
+          },
+          {
+            id: 47,
+            name: 'A2: Hanging Leg Raise',
+            warmUpSets: 1,
+            sets: 2,
+            reps: '10-12',
+            RPE: '9-10',
+            restTime: '~1.5 minutes',
+            description:
+              'Knees to chest, controlled reps, straighten legs more to increase difficulty',
+          },
+        ],
+      },
+      {
+        day: 3,
+        exercises: [
+          {
+            id: 48,
+            name: 'Pendlay Row',
+            warmUpSets: 2,
+            sets: 2,
+            reps: '8-10',
+            RPE: '9-10',
+            restTime: '~2 mins',
+            description:
+              'Initiate the movement by squeezing your shoulder blades together, pull to your lower chest, avoid using momentum.',
+          },
+          {
+            id: 49,
+            name: 'Machine Shoulder Press',
+            warmUpSets: 2,
+            sets: 2,
+            reps: '10-12',
+            RPE: '9-10',
+            restTime: '~2 mins',
+            description:
+              "Don't stop in between reps, keep smooth and controlled tension on the delts.",
+          },
+          {
+            id: 50,
+            name: 'Weighted Pullup',
+            warmUpSets: 1,
+            sets: 2,
+            reps: '8-10',
+            RPE: '9-10',
+            restTime: '~2 minutes',
+            description: 'Pull your elbows down and in, minimize swinging.',
+          },
+          {
+            id: 51,
+            name: 'Cable Chest Press',
+            warmUpSets: 2,
+            sets: 2,
+            reps: '10-12 (dropset)',
+            RPE: '9-10',
+            restTime: '2 minutes',
+            description:
+              'Can be performed seated or standing. Focus on squeezing your chest. Last set only do a dropset: perform 10-12 reps, drop the weight by ~50%, perform an additional 10-12 reps.',
+          },
+          {
+            id: 52,
+            name: 'A1: Bayesian Cable Curl',
+            warmUpSets: 1,
+            sets: 2,
+            reps: '12-15',
+            RPE: '10',
+            restTime: '~0 minutes',
+            description:
+              'Keep your elbow behind your torso throughout the range of motion, focus on squeezing your bicep. Sets are per arm.',
+          },
+          {
+            id: 53,
+            name: 'A2: Triceps Pressdown',
+            warmUpSets: 1,
+            sets: 2,
+            reps: '12-15',
+            RPE: '10',
+            restTime: '~1.5 minutes',
+            description: 'Focus on squeezing your triceps to move the weight.',
+          },
+          {
+            id: 54,
+            name: 'DB Lateral Raise',
+            warmUpSets: 1,
+            sets: 1,
+            reps: '12-15',
+            RPE: '10',
+            restTime: '~1.5 minutes',
+            description:
+              'Dropset: perform 12-15 reps, drop the weight by ~50%, perform an additional 12-15 reps. Raise the dumbbells out not up", mind muscle connection with middle fibers.',
+          },
+        ],
+      },
+      {
+        day: 4,
+        exercises: [
+          {
+            id: 55,
+            name: 'Romanian Deadlift',
+            warmUpSets: 2,
+            sets: 2,
+            reps: '10-12',
+            RPE: '8-9',
+            restTime: '~2 mins',
+            description:
+              'Maintain a neutral lower back, set your hips back, squeeze your hamstrings to move the weight.',
+          },
+          {
+            id: 56,
+            name: 'Leg Press',
+            warmUpSets: 2,
+            sets: 3,
+            reps: '10-12',
+            RPE: '8-9',
+            restTime: '~2 mins',
+            description:
+              'Medium width feet placement on the platform, do not allow your lower back to round.',
+          },
+          {
+            id: 57,
+            name: 'Leg Extension',
+            warmUpSets: 1,
+            sets: 1,
+            reps: '10-12 (dropset)',
+            RPE: '9-10',
+            restTime: '~1.5 mins',
+            description:
+              'Dropset: perform 10-12 reps, drop the weight by ~50%, perform an additional 10-12 reps. Focus on squeezing your quads to make the weight move.',
+          },
+          {
+            id: 58,
+            name: 'A1: Seated Calf Raise',
+            warmUpSets: 1,
+            sets: 2,
+            reps: '12-15',
+            RPE: '10',
+            restTime: '~0 mins',
+            description:
+              'Press all the way up to your toes, stretch your calves at the bottom, dont bounce.',
+          },
+          {
+            id: 59,
+            name: 'A2: Cable Crunch',
+            warmUpSets: 1,
+            sets: 2,
+            reps: '12-15',
+            RPE: '10',
+            restTime: '~1.5 mins',
+            description: 'Round your back as you crunch.',
+          },
+        ],
+      },
+    ],
+  },
+  {
+    programs: [
+      {
+        day: 1,
+        exercises: [
+          {
+            id: 60,
+            name: 'Flat DB Press (Heavy)',
+            warmUpSets: 3,
+            sets: 1,
+            reps: '4-6',
+            RPE: '8-9',
+            restTime: '~3 mins',
+            description:
+              'Focus on strength here. Each week add weight or reps. Keep form consistent.',
+          },
+          {
+            id: 61,
+            name: 'Flat DB Press (Back off)',
+            warmUpSets: 0,
+            sets: 1,
+            reps: '8-10',
+            RPE: '8-10',
+            restTime: '~3 mins',
+            description:
+              'Focus on mind-muscle connection with pecs. Drop the weight back and focus on stretch and squeeze!',
+          },
+          {
+            id: 62,
+            name: '2-Grip Lat Pulldown',
+            warmUpSets: 2,
+            sets: 2,
+            reps: '10-12',
+            RPE: '9-10',
+            restTime: '~2 mins',
+            description:
+              'Do first set wide overhand (1.5x shoulder width), second set underhand (1x shoulder width)',
+          },
+          {
+            id: 63,
+            name: 'Seated DB Shoulder Press',
+            warmUpSets: 1,
+            sets: 2,
+            reps: '10-12',
+            RPE: '9-10',
+            restTime: '~2 mins',
+            description:
+              'Bring the dumbbells all the way down, keep your torso upright.',
+          },
+          {
+            id: 64,
+            name: 'Seated Cable Row',
+            warmUpSets: 1,
+            sets: 2,
+            reps: '10-12 (dropset)',
+            RPE: '9-10',
+            restTime: '~2 mins',
+            description:
+              'Focus on squeezing your shoulder blades together, drive your elbows down and back. Last set only do a dropset: perform 10-12 reps, drop the weight by ~50%, perform an additional 10-12 reps.',
+          },
+          {
+            id: 65,
+            name: 'A1: EZ Bar Skull Crusher',
+            warmUpSets: 1,
+            sets: 2,
+            reps: '12-15',
+            RPE: '10',
+            restTime: '0 mins',
+            description:
+              'Arc the bar behind your head, constant tension on triceps.',
+          },
+          {
+            id: 66,
+            name: 'A2: EZ Bar Curl',
+            warmUpSets: 1,
+            sets: 2,
+            reps: '12-15',
+            RPE: '10',
+            restTime: '~1.5 mins',
+            description:
+              'Arc the bar out not up, focus on squeezing your biceps.',
+          },
+        ],
+      },
+      {
+        day: 2,
+        exercises: [
+          {
+            id: 67,
+            name: 'Hack Squat (Heavy)',
+            warmUpSets: 3,
+            sets: 1,
+            reps: '4-6',
+            RPE: '8-9',
+            restTime: '~3 mins',
+            description:
+              'Focus on strength here. Each week add weight or reps. Keep form consistent.',
+          },
+          {
+            id: 68,
+            name: 'Hack Squat (Back off)',
+            warmUpSets: 0,
+            sets: 1,
+            reps: '8-10',
+            RPE: '8-9',
+            restTime: '~3 mins',
+            description:
+              'Drop the weight back and focus on controlling the negative. Smooth and consistent rep tempo.',
+          },
+          {
+            id: 69,
+            name: 'Seated Hamstring Curl',
+            warmUpSets: 1,
+            sets: 1,
+            reps: '10-12 (Dropset)',
+            RPE: '10',
+            restTime: '~1.5 mins',
+            description:
+              'Dropset: perform 10-12 reps, drop the weight by ~50%, perform an additional 10-12 reps. Do seated if available. Otherwise do Lying Leg Curl or Nordic Ham Curl.',
+          },
+          {
+            id: 70,
+            name: 'A1: Standing Calf Raise',
+            warmUpSets: 1,
+            sets: 2,
+            reps: '10-12',
+            RPE: '9-10',
+            restTime: '0 mins',
+            description:
+              'Press all the way up to your toes, stretch your calves at the bottom, dont bounce.',
+          },
+          {
+            id: 71,
+            name: 'A2: Hanging Leg Raise',
+            warmUpSets: 1,
+            sets: 2,
+            reps: '10-12',
+            RPE: '9-10',
+            restTime: '~1.5 mins',
+            description:
+              'Knees to chest, controlled reps, straighten legs more to increase difficulty',
+          },
+        ],
+      },
+      {
+        day: 3,
+        exercises: [
+          {
+            id: 72,
+            name: 'Machine Shoulder Press',
+            warmUpSets: 2,
+            sets: 3,
+            reps: '8-10',
+            RPE: '9-10',
+            restTime: '~2 mins',
+            description:
+              "Don't stop in between reps, keep smooth and controlled tension on the delts.",
+          },
+          {
+            id: 73,
+            name: 'Cable Chest Press',
+            warmUpSets: 2,
+            sets: 2,
+            reps: '10-12 (dropset)',
+            RPE: '9-10',
+            restTime: '2 minutes',
+            description:
+              'Can be performed seated or standing. Focus on squeezing your chest. Last set only do a dropset: perform 10-12 reps, drop the weight by ~50%, perform an additional 10-12 reps.',
+          },
+          {
+            id: 74,
+            name: 'Triceps Pressdown',
+            warmUpSets: 1,
+            sets: 2,
+            reps: '12-15 (dropset)',
+            RPE: '9-10',
+            restTime: '~1.5 minutes',
+            description:
+              'Focus on squeezing your triceps to move the weight. Last set only do a dropset: perform 12-15 reps, drop the weight by ~50%, perform an additional 12-15 reps. ',
+          },
+          {
+            id: 75,
+            name: 'Close-Grip Push Up',
+            warmUpSets: 1,
+            sets: 1,
+            reps: 'Failure',
+            RPE: '10',
+            restTime: '~1.5 minutes',
+            description:
+              'Hands slightly narrower than shoulder width. Keep your elbows tucked in close to your torso. As many reps as possible!',
+          },
+          {
+            id: 76,
+            name: 'DB Lateral Raise',
+            warmUpSets: 1,
+            sets: 1,
+            reps: '12-15',
+            RPE: '10',
+            restTime: '~1.5 minutes',
+            description:
+              'Raise the dumbbells out not up", mind muscle connection with middle fibers.',
+          },
+        ],
+      },
+      {
+        day: 4,
+        exercises: [
+          {
+            id: 77,
+            name: '1-Arm Half-Kneeling Lat Pulldown',
+            warmUpSets: 1,
+            sets: 1,
+            reps: '10-12',
+            RPE: '7-8',
+            restTime: '~1.5 mins',
+            description:
+              'Keep chest tall, keep elbow tucked in close to your torso, focus on squeezing your lat to move the weight.',
+          },
+          {
+            id: 78,
+            name: 'Weighted Pullup',
+            warmUpSets: 2,
+            sets: 3,
+            reps: '6-8',
+            RPE: '9-10',
+            restTime: '2 minutes',
+            description:
+              '1.5x shoulder width grip, pull your chest to the bar.',
+          },
+          {
+            id: 79,
+            name: 'Pendlay Row',
+            warmUpSets: 2,
+            sets: 2,
+            reps: '8-10',
+            RPE: '9-10',
+            restTime: '~2 minutes',
+            description:
+              'Initiate the movement by squeezing your shoulder blades together, pull to your lower chest, avoid using momentum.',
+          },
+          {
+            id: 80,
+            name: 'Bayesian Cable Curl',
+            warmUpSets: 1,
+            sets: 2,
+            reps: '12-15',
+            RPE: '10',
+            restTime: '~1.5 minutes',
+            description:
+              'Keep your elbow behind your torso throughout the range of motion, focus on squeezing your bicep. Sets are per arm.',
+          },
+          {
+            id: 81,
+            name: 'Rope Face Pull',
+            warmUpSets: 1,
+            sets: 2,
+            reps: '10-12',
+            RPE: '10',
+            restTime: '~1.5 minutes',
+            description:
+              'Pull your elbows up and out, squeeze your shoulder blades together. Last set only do a dropset: perform 10-12 reps, drop the weight by ~50%, perform an additional 10-12 reps. ',
+          },
+        ],
+      },
+      {
+        day: 5,
+        exercises: [
+          {
+            id: 82,
+            name: 'Romanian Deadlift',
+            warmUpSets: 2,
+            sets: 2,
+            reps: '10-12',
+            RPE: '8-9',
+            restTime: '~2 mins',
+            description:
+              'Maintain a neutral lower back, set your hips back, squeeze your hamstrings to move the weight.',
+          },
+          {
+            id: 83,
+            name: 'Leg Press',
+            warmUpSets: 2,
+            sets: 3,
+            reps: '10-12',
+            RPE: '8-9',
+            restTime: '~2 mins',
+            description:
+              'Medium width feet placement on the platform, do not allow your lower back to round.',
+          },
+          {
+            id: 84,
+            name: 'Leg Extension',
+            warmUpSets: 1,
+            sets: 1,
+            reps: '10-12 (dropset)',
+            RPE: '9-10',
+            restTime: '~1.5 mins',
+            description:
+              'Dropset: perform 10-12 reps, drop the weight by ~50%, perform an additional 10-12 reps. Focus on squeezing your quads to make the weight move.',
+          },
+          {
+            id: 85,
+            name: 'A1: Seated Calf Raise',
+            warmUpSets: 1,
+            sets: 2,
+            reps: '12-15',
+            RPE: '10',
+            restTime: '~0 mins',
+            description:
+              'Press all the way up to your toes, stretch your calves at the bottom, dont bounce.',
+          },
+          {
+            id: 86,
+            name: 'A2: Cable Crunch',
+            warmUpSets: 1,
+            sets: 2,
+            reps: '12-15',
+            RPE: '10',
+            restTime: '~1.5 mins',
+            description: 'Round your back as you crunch.',
+          },
+        ],
+      },
+    ],
+  },
+];
+
+export default workouts;
